@@ -1,0 +1,122 @@
+/* paleta de colores */
+:root {
+  --wa-green: #25D366;
+  --wa-green-hover: #20bd5a;
+  --wa-bg-light: #ffffff;
+  --wa-input-bg: #f0f2f5;
+  --wa-text-dark: #111b21;
+  --wa-text-muted: #667781;
+  --wa-border: #e9edef;
+}
+
+/* widget */
+.wa-widget {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+  font-family: var(--font-body, system-ui, -apple-system, sans-serif);
+}
+
+/* boton chat whatsapp */
+.wa-btn-toggle {
+  background-color: var(--wa-green);
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.65rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.wa-btn-toggle:hover {
+  transform: scale(1.05);
+  background-color: var(--wa-green-hover);
+}
+
+.wa-btn-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+/* color de fondo de la tarjeta */
+.wa-form-container {
+  background-color: var(--wa-bg-light);
+  border-radius: 12px;
+  width: 290px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--wa-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* titulo de la tarjeta */
+.wa-title {
+  color: var(--wa-text-dark);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* cuadro de texto*/
+.wa-input {
+  width: 100%;
+  background-color: var(--wa-input-bg);
+  border: 1px solid #d1d7db;
+  color: var(--wa-text-dark); 
+  font-size: 0.875rem;
+  padding: 0.75rem;
+  outline: none;
+  resize: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* placeholder */
+.wa-input::placeholder {
+  color: var(--wa-text-muted);
+}
+
+.wa-input:focus {
+  border-color: var(--wa-green);
+  background-color: #ffffff;
+}
+
+/* boton de envio */
+.wa-btn-send {
+  width: 100%;
+  background-color: var(--wa-green);
+  color: #000000;
+  border: none;
+  padding: 0.7rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.wa-btn-send:hover {
+  background-color: var(--wa-green-hover);
+}
+
+.wa-btn-send:active {
+  transform: scale(0.98);
+}

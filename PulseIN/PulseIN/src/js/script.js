@@ -69,7 +69,40 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 3. ACORDEÓN PREGUNTAS FRECUENTES (FAQ)
+  // 3. SHOWCASE INTERACTIVO DE LA PLATAFORMA
+  const showcaseTabs = Array.from(document.querySelectorAll('.showcase-tab'));
+  const showcaseScreens = document.querySelectorAll('.showcase-screen');
+
+  const activateShowcase = (tab) => {
+    const target = tab.getAttribute('data-showcase');
+
+    showcaseTabs.forEach(item => {
+      const isActive = item === tab;
+      item.classList.toggle('active', isActive);
+      item.setAttribute('aria-selected', String(isActive));
+    });
+
+    showcaseScreens.forEach(screen => {
+      const isActive = screen.getAttribute('data-screen') === target;
+      screen.classList.toggle('active', isActive);
+      screen.hidden = !isActive;
+    });
+  };
+
+  showcaseTabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => activateShowcase(tab));
+    tab.addEventListener('keydown', (event) => {
+      if (event.key !== 'ArrowLeft' && event.key !== 'ArrowRight') return;
+
+      event.preventDefault();
+      const direction = event.key === 'ArrowRight' ? 1 : -1;
+      const nextIndex = (index + direction + showcaseTabs.length) % showcaseTabs.length;
+      showcaseTabs[nextIndex].focus();
+      activateShowcase(showcaseTabs[nextIndex]);
+    });
+  });
+
+  // 4. ACORDEÓN PREGUNTAS FRECUENTES (FAQ)
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
@@ -94,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. FORMULARIO DE CONTACTO
+  // 5. FORMULARIO DE CONTACTO
   const contactForm = document.getElementById('contact-form');
   const contactSuccess = document.getElementById('contact-success');
 

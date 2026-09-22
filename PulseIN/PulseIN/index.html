@@ -28,6 +28,7 @@
       <nav class="nav-desktop">
         <a href="#solución">Solución</a>
         <a href="#flujo">Flujo</a>
+        <a href="#plataforma">Plataforma</a>
         <a href="#privacidad">Privacidad</a>
         <a href="#preguntas">Preguntas</a>
         <a href="#contacto">Contacto</a>
@@ -46,6 +47,7 @@
     <div id="nav-mobile" class="nav-mobile hidden">
       <a href="#solución" class="mobile-link">Solución</a>
       <a href="#flujo" class="mobile-link">Flujo</a>
+      <a href="#plataforma" class="mobile-link">Plataforma</a>
       <a href="#privacidad" class="mobile-link">Privacidad</a>
       <a href="#preguntas" class="mobile-link">Preguntas</a>
       <a href="#contacto" class="mobile-link">Contacto</a>
@@ -223,10 +225,169 @@
       </div>
     </section>
 
+    <!-- SHOWCASE DE LA PLATAFORMA -->
+    <section class="showcase-section" id="plataforma">
+      <div class="container">
+        <div class="showcase-intro">
+          <div>
+            <p class="section-tag">03 · La plataforma</p>
+            <h2 class="section-title-light showcase-title">Una vista clínica.<br />Todo el seguimiento.</h2>
+          </div>
+          <p class="showcase-lead">
+            Información priorizada para que el equipo médico identifique cambios,
+            revise tendencias y dé seguimiento sin reconstruir el historial del paciente.
+          </p>
+        </div>
+
+        <div class="showcase-tabs" role="tablist" aria-label="Vistas de la plataforma PulseAI">
+          <button class="showcase-tab active" type="button" role="tab" aria-selected="true" data-showcase="dashboard">
+            <span class="showcase-tab-num">01</span>
+            Panel clínico
+          </button>
+          <button class="showcase-tab" type="button" role="tab" aria-selected="false" data-showcase="patient">
+            <span class="showcase-tab-num">02</span>
+            Detalle del paciente
+          </button>
+          <button class="showcase-tab" type="button" role="tab" aria-selected="false" data-showcase="alerts">
+            <span class="showcase-tab-num">03</span>
+            Centro de alertas
+          </button>
+        </div>
+
+        <div class="product-window">
+          <div class="product-window-bar">
+            <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div class="window-address"><span class="lock-mark">◆</span> app.pulseai.mx</div>
+            <span class="window-demo">Vista demostrativa</span>
+          </div>
+
+          <div class="product-app">
+            <aside class="product-sidebar">
+              <div class="product-brand">
+                <span class="brand-pulse">P</span>
+                <span>PulseAI</span>
+              </div>
+              <nav class="product-nav" aria-label="Navegación de la demostración">
+                <span class="product-nav-item active"><span>▦</span> Panel</span>
+                <span class="product-nav-item"><span>♙</span> Pacientes</span>
+                <span class="product-nav-item"><span>△</span> Alertas <b>3</b></span>
+                <span class="product-nav-item"><span>▤</span> Reportes</span>
+              </nav>
+              <div class="sidebar-clinic">
+                <span class="clinic-avatar">CM</span>
+                <span><strong>Clínica del Mar</strong><small>Unidad cardiología</small></span>
+              </div>
+            </aside>
+
+            <div class="product-content">
+              <div class="product-topbar">
+                <div><span class="topbar-location">Unidad cardiología</span><span class="sync-status"><i></i> Datos sincronizados</span></div>
+                <div class="doctor-profile"><span>Dra. Carmen Solís</span><b>CS</b></div>
+              </div>
+
+              <div class="showcase-screen active" data-screen="dashboard">
+                <div class="screen-heading">
+                  <div><p class="screen-eyebrow">Lunes, 21 de septiembre</p><h3>Buenos días, Dra. Solís</h3></div>
+                  <button class="mock-action" type="button">+ Agregar paciente</button>
+                </div>
+                <div class="dashboard-kpis">
+                  <article class="dashboard-kpi"><span>Pacientes activos</span><strong>142</strong><small><b>+4</b> esta semana</small></article>
+                  <article class="dashboard-kpi"><span>Seguimiento al día</span><strong>91%</strong><small>129 de 142 pacientes</small></article>
+                  <article class="dashboard-kpi alert"><span>Requieren atención</span><strong>3</strong><small>1 prioridad alta</small></article>
+                  <article class="dashboard-kpi"><span>Reportes por revisar</span><strong>8</strong><small>Corte semanal</small></article>
+                </div>
+                <div class="dashboard-layout">
+                  <div class="mock-panel patients-panel">
+                    <div class="mock-panel-header"><div><span class="mock-label">Seguimiento activo</span><h4>Pacientes recientes</h4></div><button type="button">Ver todos →</button></div>
+                    <div class="patient-table-wrap">
+                      <table class="patient-table">
+                        <thead><tr><th>Paciente</th><th>Último registro</th><th>Adherencia</th><th>Estado</th></tr></thead>
+                        <tbody>
+                          <tr><td><span class="table-avatar teal">RM</span><span><strong>Roberto M. Herrera</strong><small>IC · Clase II</small></span></td><td><strong>Hoy, 08:42</strong><small>PA · FC · SpO₂</small></td><td><span class="progress-track"><i style="width: 94%"></i></span><small>94%</small></td><td><span class="status-pill stable">Estable</span></td></tr>
+                          <tr><td><span class="table-avatar blue">LG</span><span><strong>Laura G. Méndez</strong><small>HTA · Control</small></span></td><td><strong>Hoy, 07:18</strong><small>PA · Peso</small></td><td><span class="progress-track"><i style="width: 88%"></i></span><small>88%</small></td><td><span class="status-pill review">Revisar</span></td></tr>
+                          <tr><td><span class="table-avatar navy">AM</span><span><strong>Antonio M. Ríos</strong><small>Posoperatorio</small></span></td><td><strong>Ayer, 21:06</strong><small>FC · SpO₂</small></td><td><span class="progress-track"><i style="width: 76%"></i></span><small>76%</small></td><td><span class="status-pill stable">Estable</span></td></tr>
+                          <tr><td><span class="table-avatar cyan">ES</span><span><strong>Elena S. Vargas</strong><small>Arritmia</small></span></td><td><strong>Ayer, 19:34</strong><small>ECG · Síntomas</small></td><td><span class="progress-track"><i style="width: 92%"></i></span><small>92%</small></td><td><span class="status-pill attention">Atención</span></td></tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <aside class="mock-panel activity-panel">
+                    <div class="mock-panel-header"><div><span class="mock-label">En tiempo reciente</span><h4>Actividad</h4></div></div>
+                    <div class="activity-item"><span class="activity-icon">↗</span><p><strong>Reporte generado</strong><small>Roberto M. · hace 12 min</small></p></div>
+                    <div class="activity-item"><span class="activity-icon warning">!</span><p><strong>Umbral superado</strong><small>Laura G. · hace 38 min</small></p></div>
+                    <div class="activity-item"><span class="activity-icon">✓</span><p><strong>Medición recibida</strong><small>Antonio M. · hace 1 h</small></p></div>
+                    <div class="activity-footer"><span><i></i> 138 dispositivos conectados</span></div>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="showcase-screen" data-screen="patient" hidden>
+                <div class="patient-breadcrumb">Pacientes <span>/</span> Roberto M. Herrera</div>
+                <div class="patient-profile-head">
+                  <div class="patient-identity"><span class="profile-avatar">RH</span><div><span class="status-pill stable">Estable</span><h3>Roberto M. Herrera</h3><p>67 años · Insuficiencia cardíaca clase II · ID PA-01842</p></div></div>
+                  <button class="mock-action secondary" type="button">Generar reporte</button>
+                </div>
+                <div class="patient-vitals">
+                  <article><span>Frecuencia cardíaca</span><strong>71 <small>bpm</small></strong><em>↘ 2 vs. promedio</em></article>
+                  <article><span>Presión arterial</span><strong>128/82 <small>mmHg</small></strong><em>Dentro de rango</em></article>
+                  <article><span>Saturación de O₂</span><strong>96 <small>%</small></strong><em>Sin cambios</em></article>
+                  <article><span>Peso</span><strong>78.4 <small>kg</small></strong><em>+0.3 esta semana</em></article>
+                </div>
+                <div class="patient-detail-grid">
+                  <div class="mock-panel trend-panel">
+                    <div class="mock-panel-header"><div><span class="mock-label">Últimos 7 días</span><h4>Frecuencia cardíaca</h4></div><span class="chart-legend"><i></i> Promedio diario</span></div>
+                    <div class="chart-summary"><strong>72 <small>bpm</small></strong><span>Promedio del período</span></div>
+                    <svg class="trend-chart" viewBox="0 0 640 190" role="img" aria-label="Tendencia estable de frecuencia cardíaca durante siete días">
+                      <defs><linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e6eb5" stop-opacity=".2"/><stop offset="1" stop-color="#1e6eb5" stop-opacity="0"/></linearGradient></defs>
+                      <g class="chart-grid"><line x1="48" y1="25" x2="620" y2="25"/><line x1="48" y1="75" x2="620" y2="75"/><line x1="48" y1="125" x2="620" y2="125"/></g>
+                      <path class="chart-area" d="M48 112 C90 100,110 116,145 91 S205 68,240 84 S300 105,335 79 S405 57,430 70 S490 99,525 77 S580 61,620 66 L620 150 L48 150 Z"/>
+                      <path class="chart-line" d="M48 112 C90 100,110 116,145 91 S205 68,240 84 S300 105,335 79 S405 57,430 70 S490 99,525 77 S580 61,620 66"/>
+                      <g class="chart-days"><text x="48" y="180">Lun</text><text x="142" y="180">Mar</text><text x="236" y="180">Mié</text><text x="330" y="180">Jue</text><text x="424" y="180">Vie</text><text x="518" y="180">Sáb</text><text x="602" y="180">Dom</text></g>
+                    </svg>
+                  </div>
+                  <aside class="mock-panel followup-panel">
+                    <div class="mock-panel-header"><div><span class="mock-label">Plan de seguimiento</span><h4>Hoy</h4></div></div>
+                    <div class="followup-row done"><span>✓</span><p><strong>Presión arterial</strong><small>Registrada · 08:42</small></p></div>
+                    <div class="followup-row done"><span>✓</span><p><strong>Peso corporal</strong><small>Registrado · 08:44</small></p></div>
+                    <div class="followup-row pending"><span>3</span><p><strong>Medicamentos</strong><small>Próximo · 20:00</small></p></div>
+                    <div class="adherence-box"><span>Adherencia semanal</span><strong>94%</strong><div class="progress-track"><i style="width: 94%"></i></div></div>
+                  </aside>
+                </div>
+              </div>
+
+              <div class="showcase-screen" data-screen="alerts" hidden>
+                <div class="screen-heading">
+                  <div><p class="screen-eyebrow">Priorización clínica</p><h3>Centro de alertas</h3></div>
+                  <div class="alert-filters"><button class="active" type="button">Pendientes <b>3</b></button><button type="button">Resueltas</button></div>
+                </div>
+                <div class="alerts-layout">
+                  <div class="alert-list">
+                    <button class="alert-list-item selected" type="button"><span class="alert-priority high"></span><div><span class="mock-label">Prioridad alta · hace 38 min</span><strong>Presión sistólica fuera de umbral</strong><small>Laura G. Méndez · 74 años</small></div><b>›</b></button>
+                    <button class="alert-list-item" type="button"><span class="alert-priority medium"></span><div><span class="mock-label">Prioridad media · hace 2 h</span><strong>SpO₂ debajo de 94%</strong><small>Elena S. Vargas · 63 años</small></div><b>›</b></button>
+                    <button class="alert-list-item" type="button"><span class="alert-priority low"></span><div><span class="mock-label">Seguimiento · hace 5 h</span><strong>Sin registro por 48 horas</strong><small>José A. Pineda · 69 años</small></div><b>›</b></button>
+                  </div>
+                  <div class="mock-panel alert-detail">
+                    <div class="alert-detail-head"><div><span class="status-pill attention">Prioridad alta</span><h4>Presión sistólica fuera de umbral</h4><p>Detectada hoy a las 08:04</p></div><button type="button">•••</button></div>
+                    <div class="alert-patient"><span class="table-avatar blue">LG</span><div><strong>Laura G. Méndez</strong><small>74 años · Hipertensión arterial</small></div><button type="button">Ver perfil →</button></div>
+                    <div class="alert-reading"><div><span>Lectura detectada</span><strong>158/94 <small>mmHg</small></strong></div><div><span>Umbral configurado</span><strong>&gt; 150 <small>sistólica</small></strong></div></div>
+                    <div class="mini-trend"><div><span>Tendencia de 7 días</span><b>+12 mmHg</b></div><svg viewBox="0 0 400 70" role="img" aria-label="Tendencia creciente de presión"><path d="M4 58 C48 56,60 44,99 48 S152 42,188 44 S238 35,276 38 S330 22,396 10"/></svg></div>
+                    <div class="alert-context"><span class="mock-label">Contexto automático</span><p>Tres lecturas por encima del rango durante los últimos siete días. La adherencia de medicación registrada es del 86%.</p></div>
+                    <div class="alert-actions"><button class="resolve-btn" type="button">Marcar como revisada</button><button class="outline-btn" type="button">Agregar nota</button></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="showcase-caption"><span></span> Interfaz demostrativa con información ficticia. La configuración final se adapta al flujo de cada institución.</p>
+      </div>
+    </section>
+
     <!-- SECCIÓN EJEMPLO DE REPORTE -->
     <section class="section-blue-soft">
       <div class="container">
-        <p class="section-tag">03 · Ejemplo de reporte</p>
+        <p class="section-tag">04 · Ejemplo de reporte</p>
         <div class="report-grid">
           <div>
             <h2 class="section-title">Lo que llega<br />al médico.</h2>
@@ -297,7 +458,7 @@
     <!-- SECCIÓN PRIVACIDAD -->
     <section class="section-light" id="privacidad">
       <div class="container">
-        <p class="section-tag">04 · Privacidad y límites</p>
+        <p class="section-tag">05 · Privacidad y límites</p>
         <h2 class="section-title">Lo que hacemos.<br /><span class="italic-blue">Y lo que no.</span></h2>
         
         <div class="privacy-grid">
@@ -324,7 +485,7 @@
     <!-- SECCIÓN FAQ -->
     <section class="section-white" id="preguntas">
       <div class="container">
-        <p class="section-tag">05 · Preguntas frecuentes</p>
+        <p class="section-tag">06 · Preguntas frecuentes</p>
         <h2 class="section-title">Respuestas<br />directas.</h2>
 
         <div class="faq-list">
@@ -386,7 +547,7 @@
       <div class="container">
         <div class="contact-grid">
           <div>
-            <p class="section-tag">06 · Contacto</p>
+            <p class="section-tag">07 · Contacto</p>
             <h2 class="section-title-light">Evalúe si<br />PulseAI es<br />para su centro.</h2>
             <p class="text-light">
               Podemos mostrarle el flujo completo, el reporte de ejemplo con datos

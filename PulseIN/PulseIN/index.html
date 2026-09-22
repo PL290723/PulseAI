@@ -12,6 +12,7 @@
   
   <!-- Hoja de Estilos -->
   <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/whats.css">
 </head>
 <body>
 
@@ -445,7 +446,7 @@
       </div>
     </section>
   </main>
-
+  
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-container">
@@ -458,7 +459,21 @@
     </div>
   </footer>
 
+  <!-- CONTACTO DE WHATSAPP -->
+   <div class="wa-widget">
+    <div id="wa-form-container" class="wa-form-container hidden">
+      <p class="wa-tittle">Escribenos por WhatsAPP</p>
+      <textarea id="wa-message" class="wa-input" rows="3" placeholder="Hola, nos interesa recibir más información sobre su software"></textarea>
+      <button id="wa-send" class="wa-btn-send">Enviar mensaje</button>
+    </div>
+    <button id="wa-toggle" class="wa-btn-toggle">
+      <img src="src/imgs/whats/whatsapp.png" alt="logo de whatsapp" class="wa-btn-icon"/>
+      <span>Chat WhatsApp</span>
+    </button>
+   </div>
+
   <!-- Script JS interactivo -->
   <script src="src/js/script.js"></script>
+  <script src="src/js/whats.js"></script>
 </body>
 </html>
